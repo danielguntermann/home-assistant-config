@@ -1,0 +1,25 @@
+# Ignore Home Assistant specific files
+*.db
+*.db-shm
+*.db-wal
+*.log
+home-assistant.log*
+.HA_VERSION
+
+# Ignore temporary and cache files
+.storage/
+.cloud/
+deps/
+tts/
+
+# Ignore SSL certificates, media, and backups
+ssl/
+media/
+backup/
+
+# Exceptions for important configuration files
+!automations.yaml
+!blueprints/
+!configuration.yaml
+!scenes.yaml
+!scripts.yaml
