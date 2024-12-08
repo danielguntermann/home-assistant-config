@@ -1,3 +1,4 @@
+homekit:
   - name: "Stadium"
     port: 21064
     advertise_ip: 10.69.3.88
@@ -18,6 +19,7 @@
         - binary_sensor.entrance_motion_motion
         - binary_sensor.bathroom_window_opening
         - binary_sensor.bedroom_window_opening
+
   - name: "Lounge"
     port: 21065
     advertise_ip: 10.69.3.88
@@ -40,7 +42,8 @@
         - binary_sensor.livingroom_apartmentdoor_opening
         - binary_sensor.guestbathroom_motion
         - binary_sensor.livingroom_balcony_opening
-   - name: "Front Door"
+
+  - name: "Front Door"
     mode: accessory
     port: 21074
     filter:
@@ -48,4 +51,4 @@
         - lock.entrance_frontdoor_lock
     entity_config:
       lock.entrance_frontdoor_lock:
-        name: "Front Door"  # Der Name, den du in der Apple Home App sehen wirst 
+        name: "Front Door"  # Der Name, den du in der Apple Home App sehen wirst
