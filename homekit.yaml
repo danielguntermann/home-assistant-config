@@ -1,6 +1,5 @@
   - name: "Lounge"
     port: 21065
-    advertise_ip: 10.69.3.88 
     safe_mode: true
     filter:
       include_entity_globs:
