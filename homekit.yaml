@@ -40,3 +40,12 @@
         - binary_sensor.livingroom_apartmentdoor_opening
         - binary_sensor.guestbathroom_motion
         - binary_sensor.livingroom_balcony_opening
+   - name: "Front Door"
+    mode: accessory
+    port: 21074
+    filter:
+      include_entities:
+        - lock.entrance_frontdoor_lock
+    entity_config:
+      lock.entrance_frontdoor_lock:
+        name: "Front Door"  # Der Name, den du in der Apple Home App sehen wirst 
