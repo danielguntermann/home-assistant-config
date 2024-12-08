@@ -50,4 +50,14 @@
         - lock.entrance_frontdoor_lock
     entity_config:
       lock.entrance_frontdoor_lock:
-        name: "Front Door" 
+        name: "Front Door"  # Der Name, den du in der Apple Home App sehen wirst
+
+  - name: "Alarm System"
+    mode: accessory
+    port: 21075
+    filter:
+      include_entities:
+        - alarm_control_panel.alarm_system
+    entity_config:
+      alarm_control_panel.home_alarm:
+        name: "Home Alarm"
