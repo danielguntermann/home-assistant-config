@@ -1,4 +1,3 @@
-homekit:
   - name: "Stadium"
     port: 21064
     advertise_ip: 10.69.3.88
@@ -51,4 +50,4 @@ homekit:
         - lock.entrance_frontdoor_lock
     entity_config:
       lock.entrance_frontdoor_lock:
-        name: "Front Door"  # Der Name, den du in der Apple Home App sehen wirst
+        name: "Front Door" 
