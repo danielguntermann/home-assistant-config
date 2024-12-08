@@ -1,4 +1,3 @@
-homekit:
   - name: "Lounge"
     port: 21065
     advertise_ip: 10.69.3.88 
