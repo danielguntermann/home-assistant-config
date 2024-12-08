@@ -1,6 +1,7 @@
 homekit:
   - name: "Lounge"
     port: 21065
+    advertise_ip: 10.69.3.88 
     safe_mode: true
     filter:
       include_entities:
@@ -16,3 +17,30 @@ homekit:
         - light.guestbedroom_ceiling_light
         - light.guestbedroom_desk_light
         - light.guestbedroom_floorlamp_light
+    entity_config:
+      binary_sensor.livingroom_apartmentdoor_opening:
+        name: "Living Room Door Sensor"
+        device_class: door 
+      binary_sensor.guestbathroom_motion:
+        name: "Guest Bathroom Motion Sensor"
+        device_class: motion 
+      light.livingroom_cabinet_light:
+        name: "Living Room Cabinet Light"
+      light.livingroom_concrete_spot_light:
+        name: "Living Room Concrete Spot"
+      light.livingroom_entrance_light:
+        name: "Living Room Entrance Light"
+      light.livingroom_floorlamp:
+        name: "Living Room Floor Lamp"
+      light.storage_ceiling_light:
+        name: "Storage Ceiling Light"
+      light.guestbathroom_ceiling_light:
+        name: "Guest Bathroom Ceiling Light"
+      light.guestbathroom_mirror_light:
+        name: "Guest Bathroom Mirror Light"
+      light.guestbedroom_ceiling_light:
+        name: "Guest Bedroom Ceiling Light"
+      light.guestbedroom_desk_light:
+        name: "Guest Bedroom Desk Light"
+      light.guestbedroom_floorlamp_light:
+        name: "Guest Bedroom Floor Lamp"
