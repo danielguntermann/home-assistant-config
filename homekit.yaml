@@ -21,8 +21,8 @@
         - binary_sensor.kitchen_balcony_opening
         - binary_sensor.bathroom_motion
         - binary_sensor.entrance_motion
-        - binary_sensor.bathroom_opening
-        - binary_sensor.bedroom_opening
+        - binary_sensor.bathroom_window_opening
+        - binary_sensor.bedroom_window_opening
   - name: "Lounge"
     port: 21065
     advertise_ip: 10.69.3.88
