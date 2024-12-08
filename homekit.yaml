@@ -9,18 +9,13 @@
         - light.entrance_*
         - light.bathroom_*
       exclude_entities:
-        - light.kitchen_ceiling_1_light
-        - light.kitchen_ceiling_2_light
-        - light.kitchen_ceiling_3_light
-        - light.kitchen_ceiling_4_light
-        - light.kitchen_table_1_light
-        - light.kitchen_table_2_light
-        - light.kitchen_table_3_light
+        - light.kitchen_spots
+        - light.kitchen_table
       include_entities:
         - binary_sensor.entrance_apartmentdoor_opening
         - binary_sensor.kitchen_balcony_opening
-        - binary_sensor.bathroom_motion
-        - binary_sensor.entrance_motion
+        - binary_sensor.bathroom_motion_motion
+        - binary_sensor.entrance_motion_motion
         - binary_sensor.bathroom_window_opening
         - binary_sensor.bedroom_window_opening
   - name: "Lounge"
