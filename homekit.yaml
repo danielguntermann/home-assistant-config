@@ -1,43 +1,23 @@
+homekit:
   - name: "Lounge"
     port: 21065
     advertise_ip: 10.69.3.88 
     safe_mode: true
     filter:
+      include_entity_globs:
+        - light.guestbedroom_*
+        - light.livingroom_*
+        - light.storage_*
+        - light.guestbathroom_*
+      exclude_entities:
+        - light.livingroom_floorlamp_1_light
+        - light.livingroom_floorlamp_2_light
+        - light.livingroom_floorlamp_3_light
+        - light.livingroom_sideboard_1_light
+        - light.livingroom_sideboard_2_light
+        - light.livingroom_ceiling_1_light
+        - light.livingroom_ceiling_2_light
       include_entities:
         - binary_sensor.livingroom_apartmentdoor_opening
         - binary_sensor.guestbathroom_motion
-        - light.livingroom_cabinet_light
-        - light.livingroom_concrete_spot_light
-        - light.livingroom_entrance_light
-        - light.livingroom_floorlamp
-        - light.storage_ceiling_light
-        - light.guestbathroom_ceiling_light
-        - light.guestbathroom_mirror_light
-        - light.guestbedroom_ceiling_light
-        - light.guestbedroom_desk_light
-        - light.guestbedroom_floorlamp_light
-    entity_config:
-      binary_sensor.livingroom_apartmentdoor_opening:
-        name: "Living Room Door Sensor"
-      binary_sensor.guestbathroom_motion:
-        name: "Guest Bathroom Motion Sensor"
-      light.livingroom_cabinet_light:
-        name: "Living Room Cabinet Light"
-      light.livingroom_concrete_spot_light:
-        name: "Living Room Concrete Spot"
-      light.livingroom_entrance_light:
-        name: "Living Room Entrance Light"
-      light.livingroom_floorlamp:
-        name: "Living Room Floor Lamp"
-      light.storage_ceiling_light:
-        name: "Storage Ceiling Light"
-      light.guestbathroom_ceiling_light:
-        name: "Guest Bathroom Ceiling Light"
-      light.guestbathroom_mirror_light:
-        name: "Guest Bathroom Mirror Light"
-      light.guestbedroom_ceiling_light:
-        name: "Guest Bedroom Ceiling Light"
-      light.guestbedroom_desk_light:
-        name: "Guest Bedroom Desk Light"
-      light.guestbedroom_floorlamp_light:
-        name: "Guest Bedroom Floor Lamp"
+        - binary_sensor.livingroom_balcony_opening
