@@ -19,10 +19,8 @@
     entity_config:
       binary_sensor.livingroom_apartmentdoor_opening:
         name: "Living Room Door Sensor"
-        device_class: door 
       binary_sensor.guestbathroom_motion:
         name: "Guest Bathroom Motion Sensor"
-        device_class: motion 
       light.livingroom_cabinet_light:
         name: "Living Room Cabinet Light"
       light.livingroom_concrete_spot_light:
