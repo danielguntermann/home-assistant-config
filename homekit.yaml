@@ -1,6 +1,6 @@
 homekit:
   - name: "Lounge"
-    port: 51828
+    port: 21065
     safe_mode: true
     filter:
       include_entities:
