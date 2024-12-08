@@ -1,7 +1,6 @@
 homekit:
   - name: "Lounge"
     port: 51828
-    advertise_ip: 10.69.1.145 
     safe_mode: true
     filter:
       include_entities:
